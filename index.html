@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" crossorigin href="/assets/index-DIrIZS9j.css">
+  </head>
+  <body>
+    <div>
+      <nav
+        class="flex justify-between items-center px-4 md:px-8 py-4 bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white"
+      >
+        <h3 class="text-lg md:text-xl">Rashid</h3>
+
+        <!-- Menu Icon for Mobile -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="focus:outline-none">
+            <!-- Menu Icon (Hamburger) -->
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul
+          id="menu"
+          class="hidden md:flex flex-col md:flex-row justify-center text-center gap-4 md:gap-8 cursor-pointer flex-1"
+        >
+          <li>
+            <a href="#" class="hover:text-gray-200 transition">About us</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-200 transition">Service</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-200 transition">Product</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-200 transition">Contact</a>
+          </li>
+        </ul>
+
+        <button
+          class="border-double border-2 border-indigo-600 text-indigo-600 py-2 px-4 rounded hover:bg-indigo-600 hover:text-white transition hidden md:block"
+        >
+          Login
+        </button>
+      </nav>
+      <section
+        class="h-screen bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center text-white px-4"
+      >
+        <div class="text-center">
+          <h1 class="text-3xl md:text-5xl font-bold mb-4">
+            Welcome to Our Website
+          </h1>
+          <p class="text-base md:text-lg mb-6">
+            We offer the best services to help you grow.
+          </p>
+          <a
+            href="#"
+            class="bg-indigo-600 py-2 px-6 rounded-full hover:bg-indigo-700 active:bg-indigo-700 focus:outline-none focus:ring focus:ring-indigo-300 transition"
+            >Get Started</a
+          >
+        </div>
+      </section>
+      <!-- Add the following JavaScript to toggle the menu -->
+      <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.getElementById("menu");
+
+        menuBtn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+      </script>
+    </div>
+  </body>
+</html>
